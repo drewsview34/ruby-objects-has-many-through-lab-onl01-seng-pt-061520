@@ -23,7 +23,7 @@ class Patient
   end
   
   def doctors 
-    appointments.collect { |appointment| appointment.doctor == sel}
+    appointments.map { |appointment| appointment == sel}
   end
   
 end
